@@ -117,8 +117,14 @@ div.content
     color: #555;
     margin-bottom: 20px;
 }
+.main_content
+{
+    padding: 20px;
+    margin-bottom: 50px;
+}
 .footer
 {
+    /*height: 50px;*/
     margin-top: 10px;
 
     color: #bbb;
@@ -212,7 +218,7 @@ h6.meta
     color: #bbb;
 }
 section.meta {
-    margin-top: 
+    margin-top:
 }
 .powered
 {
