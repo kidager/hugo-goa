@@ -21,7 +21,7 @@ From the root of your blog:
 ```
 mkdir -p themes
 cd themes
-git clone https://github.com/shenoybr/hugo-goa 
+git clone https://github.com/shenoybr/hugo-goa
 ```
 
 ## Content creation
@@ -39,7 +39,7 @@ or
 hugo new posts/first.md
 ````
 
-You can now go ahead an edit the newly created file under the `content` directory. Once you are finished editing, to have hugo generate the page, set `draft = false` in the articles front matter. 
+You can now go ahead an edit the newly created file under the `content` directory. Once you are finished editing, to have hugo generate the page, set `draft = false` in the articles front matter.
 
 ### Organizing pages
 
@@ -105,22 +105,52 @@ These settings are included in the site's meta section.
 
 These settings to display your social accounts.
 
-- `github`: Your github username.
-- `instagram`: Your instagram username.
-- `xing`: Your xing username.
-- `linkedin`: Your linkedIn username.
-- `twitter`: Your twitter username.
-- `facebook`: Your facebook username.
-- `google`: Your google username.
-- `email`: Your email.
+- `github`: Your [Github](https://github.com) username.
+- `instagram`: Your [Instagram](https://www.instagram.com) username.
+- `xing`: Your [Xing](https://www.xing.com) username.
+- `linkedin`: Your [Linkedin](https://www.linkedin.com) username.
+- `twitter`: Your [Twitter](https://twitter.com) username.
+- `facebook`: Your [Facebook](https://www.facebook.com) username.
+- `google`: Your [Google](https://www.google.com) username.
+- `medium`: Your [Medium](https://medium.com) username.
+- `devto`: Your [dev.to](https://dev.to) username.
+- `stackoverflow`: Your [StackOverflow](https://stackoverflow.com) username.
+- `angellist`: Your [AngelList](https://angel.co) username.
+- `lastfm`: Your [Last.fm](https://www.last.fm) username.
+- `goodreads`: Your [Goodreads](https://www.goodreads.com) username.
+- `gitlab`: Your [Gitlab](https://gitlab.com) username.
+- `bitbucket`: Your [BitBucket](https://bitbucket.org) username.
+- `fivehundredpx`: Your [500px](https://500px.com) username.
+- `flickr`: Your [Flickr](https://flickr.com) username.
+- `foursquare`: Your [Foursquare](https://foursquare.com) username.
+- `hackernews`: Your [Y Combinator Hackernews](https://news.ycombinator.com) username.
+- `kickstarter`: Your [Kickstarter](https://kickstarter.com) username.
+- `patreon`: Your [Patreon](https://patreon.com) username.
+- `pintrest`: Your [Pintrest](https://pintrest.com) username.
+- `steam`: Your [Steam](https://steamcommunity.com) username.
+- `reddit`: Your [Reddit](https://www.reddit.com) username.
+- `snapchat`: Your [Snapchat](https://snapchat.com) username.
+- `keybase`: Your [Keybase](https://keybase.io) username.
+- `twitch`: Your [Twitch](https://twitch.tv) username.
+- `youtube`: Your [YouTube](https://youtube.com) username.
+- `soundcloud`: Your [Soundcloud](https://soundcloud.com) username.
+- `tumblr`: Your [Tumblr](https://tumblr.com) username.
+- `skype`: Your [skype](https://skype.com) username.
+- `telegram`: Your [Telegram](https://telegram.com) username.
+- `whatsapp`: Your phone number.* Follow the steps [here](https://faq.whatsapp.com/en/26000030/).
+- `email`: Your email.*
+
+* `WARNING`: It is recommended to keep your private data (phone number/ email) private. Especially if you don't use them for business. Adding it to your public will expose your data to the public. This is irreversabile.
 
 ### Extras `[params.extra]`
 
 These settings for extra features that this site uses.
 
 - `copyright`: Add a copyright statement to the bottom of the theme. eg. `© 2016. Erlich Bachman. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."`
+- `rss`: Enable rss icon next to social accounts.
 - `poweredby`: Help promote this theme and give the authors credit. eg. `true` or `false`.
 - `highlightjs`: Use highlightJS to highlight code on your site. eg. `true` or `false`.
+- `socialmarkup`: Adds links that conform to the [Schema.org](schema.org) markup. See this [link](https://developers.google.com/search/docs/data-types/social-profile) for more.
 
 ### Main Menu `[[menu.main]]`
 
@@ -191,7 +221,7 @@ Example:
 3. Make sure your code follows the style of the project.
 4. Test it thoroughly.
 5. Open a PR requesting for it to be merged.
-6. Describe the feature or issue your are solving in detail. 
+6. Describe the feature or issue your are solving in detail.
 7. Wait for its approval.
 8. Merge and Rejoice.
 
@@ -207,4 +237,3 @@ The theme's design was inspired by many blogs and themes:
 ## License
 
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License. See the [LICENSE](https://raw.githubusercontent.com/shenoybr/hugo-goa/master/LICENSE) file for more details.
-

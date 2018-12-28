@@ -88,7 +88,7 @@ div.content
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    color: #bbb;
+    color: #8b8b8b;
 }
 .error
 {
@@ -100,7 +100,7 @@ div.content
 {
     font-size: 80px;
 
-    color: #bbb;
+    color: #8b8b8b;
 }
 .error p
 {
@@ -127,7 +127,7 @@ div.content
     /*height: 50px;*/
     margin-top: 10px;
 
-    color: #bbb;
+    color: #8b8b8b;
 }
 .header
 {
@@ -203,7 +203,7 @@ h3.intro
     font-size: 12px;
     font-weight: 200;
 
-    color: #bbb;
+    color: #8b8b8b;
 }
 a.meta
 {
@@ -215,7 +215,7 @@ h6.meta
     font-size: 12px;
     font-weight: 200;
 
-    color: #bbb;
+    color: #8b8b8b;
 }
 section.meta {
     margin-top:
@@ -260,4 +260,9 @@ header.title
 
         margin-top: 30px;
     }
+}
+pre > code {
+    white-space: pre;
+    word-wrap: initial;
+    word-break: initial;
 }
