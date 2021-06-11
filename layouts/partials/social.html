@@ -1,12 +1,15 @@
-<section id="social-pane" class="row text-center social">
+<section id="social-pane" class="text-center social">
   {{ with .Site.Params.social.twitter }}
   <a href="https://twitter.com/{{.}}" aria-label="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.google }}
   <a href="https://plus.google.com/{{.}}/about" aria-label="Google Plus" target="_blank"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.googlescholar}}
+  <a href="https://scholar.google.com/citations?user={{.}}" aria-label="Google Scholar" target="_blank"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+  {{ end }}
   {{ with .Site.Params.social.goodreads }}
-  <a href="https://www.goodreads.com/user/show/{{.}}" aria-label="Goodreads" target="_blank"><i class="fab fa-goodreads" aria-hidden="true"></i></a>
+  <a href="https://www.goodreads.com/{{.}}" aria-label="Goodreads" target="_blank"><i class="fab fa-goodreads" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.lastfm }}
   <a href="https://www.last.fm/user/{{.}}/" aria-label="Last.fm" target="_blank"><i class="fab fa-lastfm" aria-hidden="true"></i></a>
@@ -78,7 +81,7 @@
   <a href="https://snapchat.com/add/{{.}}" aria-label="Snapchat" target="_blank"><i class="fab fa-snapchat" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.youtube}}
-  <a href="https://youtube.com/user/{{.}}" aria-label="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+  <a href="https://youtube.com/c/{{.}}" aria-label="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.keybase}}
   <a href="https://keybase.io/{{.}}" aria-label="Keybase" target="_blank"><i class="fab fa-keybase" aria-hidden="true"></i></a>
@@ -92,6 +95,9 @@
   {{ with .Site.Params.social.tumblr}}
   <a href="https://{{.}}.tumblr.com" aria-label="Tumblr" target="_blank"><i class="fab fa-tumblr" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.strava}}
+  <a href="https://www.strava.com/athletes/{{.}}" aria-label="Strava" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
+  {{ end }}
   {{ with .Site.Params.social.skype}}
   <a href="skype:{{.}}" aria-label="Skype" target="_blank"><i class="fab fa-skype" aria-hidden="true"></i></a>
   {{ end }}
@@ -102,7 +108,10 @@
   <a href="https://wa.me/{{.}}" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.email }}
-  <a href="mailto:{{.}}" aria-label="Email" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  <a href="mailto:{{.}}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.pgp }}
+  <a href="/{{.}}.txt" aria-label="PGP" name="{{.}}"><i class="fas fa-key" aria-hidden="true"></i></a>
   {{ end }}
   {{ if and ( .Site.Params.extra.rss ) ( .RSSLink ) }}
   <a href="{{ .RSSLink }}" aria-label="RSS" target="_blank"><i class="fas fa-rss" aria-hidden="true"></i></a>
@@ -118,6 +127,7 @@
   "sameAs": [
     {{ with .Site.Params.social.twitter }}"https://twitter.com/{{.}}",{{ end }}
     {{ with .Site.Params.social.google }}"https://plus.google.com/{{.}}/about",{{ end }}
+    {{ with .Site.Params.social.googlescholar}}"https://scholar.google.com/citations?user={{.}}"{{ end }}
     {{ with .Site.Params.social.goodreads }}"https://www.goodreads.com/user/show/{{.}}",{{ end }}
     {{ with .Site.Params.social.lastfm }}"https://www.last.fm/user/{{.}}/",{{ end }}
     {{ with .Site.Params.social.facebook }}"https://facebook.com/{{.}}",{{ end }}
@@ -146,6 +156,7 @@
     {{ with .Site.Params.social.twitch}}"https://www.twitch.tv/{{.}}",{{ end }}
     {{ with .Site.Params.social.soundcloud}}"https://soundcloud.com/{{.}}",{{ end }}
     {{ with .Site.Params.social.tumblr}}"https://{{.}}.tumblr.com",{{ end }}
+    {{ with .Site.Params.social.strava}}"https://www.strava.com/athletes/{{.}}",{{ end }}
     "{{ .Site.Params.baseURL }}"
   ]
 }

@@ -41,6 +41,7 @@ linkedin = "<username>"
 twitter = "<username>"
 facebook = "<username>"
 google = "<username>"
+googlescholar = "<account_id>"
 stackoverflow = "<username>"
 lastfm = "<username>"
 goodreads = "<username>"
@@ -56,15 +57,17 @@ pintrest = "<username>"
 steam = "<username>"
 reddit = "<username>"
 snapchat = "<username>"
-youtube = "<username>"
+youtube = "<channelid>"
 keybase = "<username>"
 twitch = "<username>"
 soundcloud = "<username>"
 tumblr = "<username>"
+strava = "<username>"
 skype = "<username>"
 telegram = "<username>"
 whatsapp = "<username>"
 email = "you@example.com"
+pgp = "<key_fingerprint>"
 
 ## Extras
 [params.extra]
@@ -72,6 +75,8 @@ copyright = "© 2016. Erlich Bachman. [Some Rights Reserved](http://creativecomm
 poweredby = true
 highlightjs = true
 socialmarkup = true
+toc = true
+displayrssicon = true
 
 ## Main Menu
 [[menu.main]]
