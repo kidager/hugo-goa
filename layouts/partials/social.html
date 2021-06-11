@@ -32,8 +32,11 @@
   {{ with .Site.Params.social.medium}}
   <a href="https://medium.com/{{.}}" aria-label="Medium" target="_blank"><i class="fab fa-medium" aria-hidden="true"></i></a>
   {{ end }}
-  {{ with .Site.Params.social.pgp}}
+  {{ with .Site.Params.social.pgp_lookup}}
   <a href="http://ha.pool.sks-keyservers.net/pks/lookup?op=get&search={{.}}&exact=on&options=mr" aria-label="GPGKey" target="_blank"><i class="fa fa-key" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.pgp_url}}
+  <a href="{{.}}" aria-label="GPGKey" target="_blank"><i class="fa fa-key" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.devto}}
   <a href="https://dev.to/{{.}}" aria-label="Dev.to" target="_blank"><i class="fas fa-terminal" aria-hidden="true"></i></a>
